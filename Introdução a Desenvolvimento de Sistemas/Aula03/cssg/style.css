@@ -1,19 +1,75 @@
-/* 
-
-*/
-
 * {
-
-    background: linear-gradient(135deg, #FF5F6D, #FFC371, #FF9A8B, #FFD3A5);
-
-
+    margin: 0;
+    padding: 0;
 }
-
+ 
 body {
-    font-family: "Asimovian", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    color: #444;
 }
-
+ 
 h1 {
     font-size: 2rem;
+    font-weight: normal;
+}
+section{
+    padding: 3rem 0 4rem 0;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1rem;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+     /* flex box - alinhamento de conteúdo*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    /* ajuste do tamanho*/
+ 
+    width: 30%;
+    height: 250px;
+ 
+    /*estilo visual do card e seus elementos*/
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+ 
+.card.yellow{
+    background-color: #000000;
+}
+.card.purple{
+    background-color: #bebb00;
+}
+.card.green{
+    background-color: #036df7;
+}
+ 
+.members{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.member img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+ 
+footer{
+    background-color: #69A9F3;
+}
 
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: top 3rem;
+    
 }

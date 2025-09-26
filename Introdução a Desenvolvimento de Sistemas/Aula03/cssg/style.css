@@ -2,74 +2,131 @@
     margin: 0;
     padding: 0;
 }
- 
+
 body {
     font-family: "Montserrat", sans-serif;
     color: #444;
 }
- 
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type='text'],
+input[type='password'],
+select {
+    width: 200px;
+    padding: 0.5rem;
+    border-radius: 30px;
+    border: 1px solid rgb(4, 51, 182)
+}
+
+.intro p {
+    margin: 1.5rem 0;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.intro .ctscge {
+    margin: 2rem 0;
+}
+
+.btn {
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.btn:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.primary {
+    background-color: #f19cdc;
+    font-weight: bolder;
+    color: #ffffff;
+
+}
+
 h1 {
     font-size: 2rem;
     font-weight: normal;
 }
-section{
+
+section {
     padding: 3rem 0 4rem 0;
 }
-.container{
+
+.container {
     max-width: 1000px;
     margin: auto;
     padding: 0 1rem;
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: space-between;
 }
-.card{
-     /* flex box - alinhamento de conteúdo*/
+
+.card {
+    /* flex box - alinhamento de conteúdo*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
     /* ajuste do tamanho*/
- 
+
     width: 30%;
     height: 250px;
- 
+
     /*estilo visual do card e seus elementos*/
     text-align: center;
     border-radius: 10px;
     color: #fff;
     font-size: 1.2rem;
 }
- 
-.card.yellow{
+
+.card.yellow {
     background-color: #000000;
 }
-.card.purple{
+
+.card.purple {
     background-color: #bebb00;
 }
-.card.green{
+
+.card.green {
     background-color: #036df7;
 }
- 
-.members{
+
+.members {
     display: flex;
     justify-content: space-between;
 }
- 
-.member img{
+
+.member img {
     height: 120px;
     width: 120px;
     border-radius: 50%;
 }
- 
-footer{
+
+footer {
     background-color: #69A9F3;
 }
 
-footer ul{
+footer ul {
     display: flex;
     justify-content: space-evenly;
     padding: top 3rem;
-    
+
 }
